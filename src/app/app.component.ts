@@ -1,7 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+// es6 imports standard
 
 @Component({
   selector: 'app-root',
-  template: `<router-outlet></router-outlet>`
+  template: `<app-customers></app-customers>`
 })
-export class AppComponent { }
+export class AppComponent implements OnInit {
+
+  title = "Superman"
+
+    ngOnInit() {}
+ }
